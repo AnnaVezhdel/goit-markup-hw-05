@@ -506,7 +506,7 @@ color: #2e2f42;
 margin-bottom: 16px;
 }
 .modal-field {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .modal-input-wrap {
     position: relative;
@@ -570,9 +570,6 @@ font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
-display: flex;
-align-items: center;
-gap: 8px;
 }
 .policy {
     line-height: 1.33;
@@ -589,8 +586,9 @@ display: inline-flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-check:checked + .check-text span {
+.modal-check:checked + .check-text-span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
